@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="list">
+    <div draggable="true" data-key="dossier-1" class="item drop folder">
+      <span>Dossier 1</span>
+    </div>
+    <div draggable="true" data-key="dossier-2" class="item drop folder">
+      <span>Dossier 2</span>
+    </div>
+    <div draggable="true" class="item drop link">
+      <span>Lien 1</span>
+    </div>
+    <div draggable="true" data-key="dossier-3" class="item drop folder">
+      <span>Dossier 3</span>
+    </div>
+  </div>
+
+  <div class="list" data-key="dossier-1" style="display: none">
+    <div draggable="true" class="item drop link">
+      <span>Lien 2</span>
+    </div>
+  </div>
+
+  <div class="list" data-key="dossier-2" style="display: none">
+  </div>
+  <div class="list" data-key="dossier-3" style="display: none">
+  </div>
+</body>
+</html>

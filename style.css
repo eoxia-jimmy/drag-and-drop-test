@@ -1,0 +1,28 @@
+.list {
+  width: 60%;
+  margin: auto;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+.sub-list {
+  border: solid black 1px;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.list .item {
+  background-color: white;
+  padding: 10px;
+}
+
+[draggable=true] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
